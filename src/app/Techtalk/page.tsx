@@ -61,55 +61,55 @@ const Tecktalks: FC = () => {
     return (
         <div className="new-page">
             <section className="relative h-screen text-white flex items-center justify-center overflow-hidden">
-            {/* Background Image */}
-            <div className="absolute inset-0">
-                <Image
-                    src="/1.png"
-                    alt="Tech Talks Banner"
-                    fill
-                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                />
-            </div>
-
-            {/* Content */}
-            <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-                {/* Right Heading */}
-                <div
-                    className="order-first md:order-last text-right relative mt-8 md:mt-0 md:translate-x-[-50%] md:translate-y-[-50%]"
-                    style={{ transform: 'translate(-50%, -50%)' }}
-                >
-                    <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold bg-gradient-to-r text-white bg-clip-text text-transparent leading-tight">
-                        Tech <br /> Talk
-                    </h1>
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <Image
+                        src="/1.png"
+                        alt="Tech Talks Banner"
+                        fill
+                        style={{ objectFit: 'cover', objectPosition: 'center' }}
+                    />
                 </div>
 
-                {/* Left Text */}
-                <div className="max-w-lg text-left mb-8 md:mb-0">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-                        Welcome to Tech Talk
-                    </h2>
-                    <p className="text-lg sm:text-xl text-gray-300">
-                        Explore cutting-edge innovations, network with industry leaders, and
-                        participate in exciting challenges. Let’s shape the future together!
-                    </p>
+                {/* Content */}
+                <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+                    {/* Right Heading */}
+                    <div
+                        className="order-first md:order-last text-right relative mt-8 md:mt-0 md:translate-x-[-50%] md:translate-y-[-50%]"
+                        style={{ transform: 'translate(-50%, -50%)' }}
+                    >
+                        <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold bg-gradient-to-r text-white bg-clip-text text-transparent leading-tight">
+                            Tech <br /> Talk
+                        </h1>
+                    </div>
 
-                    {/* Timer Section */}
-                    <div className="mt-6 text-gray-100">
-                        <div className="flex flex-wrap gap-6 md:gap-4 justify-center text-gray-100 text-lg font-mono">
-                            {Object.entries(timeLeft).map(([unit, value], index) => (
-                                <div key={unit} className="flex flex-col items-center">
-                                    <span className="text-3xl sm:text-4xl font-bold">
-                                        {String(value).padStart(2, '0')}
-                                        {index < 3 && <span className="text-3xl sm:text-4xl font-bold mx-1">:</span>}
-                                    </span>
-                                    <span className="text-sm sm:text-base">{unit.charAt(0).toUpperCase() + unit.slice(1)}</span>
-                                </div>
-                            ))}
+                    {/* Left Text */}
+                    <div className="max-w-lg text-left mb-8 md:mb-0">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
+                            Welcome to Tech Talk
+                        </h2>
+                        <p className="text-lg sm:text-xl text-gray-300">
+                            Explore cutting-edge innovations, network with industry leaders, and
+                            participate in exciting challenges. Let’s shape the future together!
+                        </p>
+
+                        {/* Timer Section */}
+                        <div className="mt-6 text-gray-100">
+                            <div className="flex flex-wrap gap-6 md:gap-4 justify-center text-gray-100 text-lg font-mono">
+                                {Object.entries(timeLeft).map(([unit, value], index) => (
+                                    <div key={unit} className="flex flex-col items-center">
+                                        <span className="text-3xl sm:text-4xl font-bold">
+                                            {String(value).padStart(2, '0')}
+                                            {index < 3 && <span className="text-3xl sm:text-4xl font-bold mx-1">:</span>}
+                                        </span>
+                                        <span className="text-sm sm:text-base">{unit.charAt(0).toUpperCase() + unit.slice(1)}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
 
 
