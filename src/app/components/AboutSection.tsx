@@ -86,40 +86,33 @@
 
 // export default AboutSection;
 
+"use client";
 
-
-'use client';
-
-import Link from 'next/link';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from "react";
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-  const videoRef = useRef<HTMLVideoElement | null>(null); // Type the ref as HTMLVideoElement or null
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
-    // Trigger animations on component mount
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const fadeInClass = isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10';
+  const fadeInClass =
+    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10";
 
   const handleVideoClick = () => {
     if (videoRef.current) {
-      // Play the video when clicked
-      setIsVideoPlaying(true);
+      setIsVideoPlaying(true); // Start playing the video
 
-      // Request fullscreen for the video
-      if (videoRef.current.requestFullscreen) {
-        videoRef.current.requestFullscreen();
-      } else if (videoRef.current.mozRequestFullScreen) { // Firefox
-        videoRef.current.mozRequestFullScreen();
-      } else if (videoRef.current.webkitRequestFullscreen) { // Chrome, Safari
-        videoRef.current.webkitRequestFullscreen();
-      } else if (videoRef.current.msRequestFullscreen) { // IE/Edge
-        videoRef.current.msRequestFullscreen();
-      }
+      // Try to trigger fullscreen mode
+      const videoElement = videoRef.current;
+
+      if (videoElement.requestFullscreen) {
+        videoElement.requestFullscreen();
+      } 
     }
   };
 
@@ -127,10 +120,10 @@ const AboutSection = () => {
     <section
       className="relative min-h-screen bg-slate-900 text-white overflow-hidden"
       style={{
-        backgroundImage: 'url(/7.png)', // Replace with the actual path to your GIF
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        backgroundImage: "url(/7.png)", // Replace with the actual path to your GIF
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
     >
       {/* Overlay for better readability */}
@@ -160,15 +153,13 @@ const AboutSection = () => {
 
       {/* Video Section */}
       <div className="relative mt-10 flex justify-center items-center">
-        <div
-          className={`transition-all duration-300 ease-in-out mx-auto`}
-        >
+        <div className={`transition-all duration-300 ease-in-out mx-auto`}>
           <video
             ref={videoRef}
-            src="/your-video.mp4" // Replace with your video path
+            src="/BTU TRAILER.mov" // Replace with your video path
             controls
             autoPlay={isVideoPlaying}
-            className="w-[500px] h-[500px] rounded-xl cursor-pointer"
+            className={`w-[500px] h-[500px] rounded-xl cursor-pointer transition-all duration-500`}
             onClick={handleVideoClick}
           />
         </div>
@@ -178,43 +169,31 @@ const AboutSection = () => {
       <div className="relative mt-10 my-20">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Event 1 */}
-          <Link href="/Aihackathon" passHref>
-            <div
-              className={`relative p-6 bg-gradient-to-r from-purple-900 to-blue-900 rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl cursor-pointer ${fadeInClass}`}
-            >
-              <h2 className="text-3xl font-bold text-white">AI Hackathon</h2>
-              <p className="mt-4 text-gray-400">
-                🧠 12 hours of intense coding with real-world challenges. Top
-                solutions handpicked by industry experts.
-              </p>
-            </div>
-          </Link>
+          <div className="relative p-6 bg-gradient-to-r from-purple-900 to-blue-900 rounded-2xl shadow-lg overflow-hidden">
+            <h2 className="text-3xl font-bold text-white">AI Hackathon</h2>
+            <p className="mt-4 text-gray-400">
+              🧠 12 hours of intense coding with real-world challenges. Top
+              solutions handpicked by industry experts.
+            </p>
+          </div>
 
           {/* Event 2 */}
-          <Link href="/Techtalk" passHref>
-            <div
-              className={`relative p-6 bg-gradient-to-r from-purple-900 to-blue-900 rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl cursor-pointer ${fadeInClass}`}
-            >
-              <h2 className="text-3xl font-bold text-white">Tech Talk</h2>
-              <p className="mt-4 text-gray-400">
-                💬 Dive into insightful sessions with industry leaders discussing
-                cutting-edge topics.
-              </p>
-            </div>
-          </Link>
+          <div className="relative p-6 bg-gradient-to-r from-purple-900 to-blue-900 rounded-2xl shadow-lg overflow-hidden">
+            <h2 className="text-3xl font-bold text-white">Tech Talk</h2>
+            <p className="mt-4 text-gray-400">
+              💬 Dive into insightful sessions with industry leaders discussing
+              cutting-edge topics.
+            </p>
+          </div>
 
           {/* Event 3 */}
-          <Link href="/Gaming" passHref>
-            <div
-              className={`relative p-6 bg-gradient-to-l from-purple-900 to-blue-900 rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl cursor-pointer ${fadeInClass}`}
-            >
-              <h2 className="text-3xl font-bold text-white">Gaming Tournament</h2>
-              <p className="mt-4 text-gray-400">
-                🎮 Compete in FIFA and DOTA tournaments for ultimate gaming
-                glory.
-              </p>
-            </div>
-          </Link>
+          <div className="relative p-6 bg-gradient-to-l from-purple-900 to-blue-900 rounded-2xl shadow-lg overflow-hidden">
+            <h2 className="text-3xl font-bold text-white">Gaming Tournament</h2>
+            <p className="mt-4 text-gray-400">
+              🎮 Compete in FIFA and DOTA tournaments for ultimate gaming
+              glory.
+            </p>
+          </div>
         </div>
       </div>
     </section>
