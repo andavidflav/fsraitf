@@ -76,7 +76,7 @@ const Tecktalks: FC = () => {
                 {/* Right Heading */}
                 <div
                     className="order-first md:order-last text-right relative mt-8 md:mt-0 md:translate-x-[-50%] md:translate-y-[-50%]"
-                    style={{ transform: 'translate(-50%, -50%)' }}
+                    style={{ transform: 'translate(-90%, -60%)' }}
                 >
                     <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold bg-gradient-to-r text-white bg-clip-text text-transparent leading-tight whitespace-nowrap md:whitespace-normal">
                         Tech <br /> Talk
