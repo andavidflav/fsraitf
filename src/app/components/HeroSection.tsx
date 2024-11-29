@@ -68,20 +68,22 @@ const HeroSection = () => {
     ]; // Replace with actual logo paths.
 
     return (
-        <div className="relative h-[50vh] md:h-[60vh] lg:h-[70vh] text-white flex items-center justify-center overflow-hidden bg-slate-900">
+        <div className="relative h-[100vh] md:h-[90vh] lg:h-[100vh] text-white flex items-center justify-center overflow-hidden bg-slate-900">
             {/* Scrolling Logos Section */}
-            <section className="py-0 w-full">
+            <section className="py-10 w-full">
                 <div className="container mx-auto px-5 md:px-10 lg:px-20 overflow-hidden">
                     {/* Heading */}
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8">Our Partners</h2>
 
-                    <div className="flex flex-wrap items-center justify-center gap-8">
+                    {/* Logos container */}
+                    <div className="flex flex-wrap items-center justify-center gap-8 bg-white py-10">
                         {logos.map((logo, index) => (
                             <img
                                 key={index}
                                 src={logo}
                                 alt={`Sponsor ${index + 1}`}
-                                className="h-32 md:h-40 lg:h-48 object-contain"
+                                className="h-32 md:h-40 lg:h-48 object-contain transition-all duration-300 ease-in-out 
+                                sm:grayscale sm:invert sm:brightness-100 sm:contrast-100 md:grayscale-0 md:invert-0 md:brightness-100 md:contrast-100"
                             />
                         ))}
                     </div>
@@ -92,6 +94,8 @@ const HeroSection = () => {
 }
 
 export default HeroSection;
+
+
 
 
 

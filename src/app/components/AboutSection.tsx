@@ -91,10 +91,12 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const videoRef = useRef(null); // Ref to access the video element
 
   useEffect(() => {
     // Trigger animations on component mount
@@ -102,6 +104,24 @@ const AboutSection = () => {
   }, []);
 
   const fadeInClass = isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10';
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      // Play the video when clicked
+      setIsVideoPlaying(true);
+
+      // Request fullscreen for the video
+      if (videoRef.current.requestFullscreen) {
+        videoRef.current.requestFullscreen();
+      } else if (videoRef.current.mozRequestFullScreen) { // Firefox
+        videoRef.current.mozRequestFullScreen();
+      } else if (videoRef.current.webkitRequestFullscreen) { // Chrome, Safari
+        videoRef.current.webkitRequestFullscreen();
+      } else if (videoRef.current.msRequestFullscreen) { // IE/Edge
+        videoRef.current.msRequestFullscreen();
+      }
+    }
+  };
 
   return (
     <section
@@ -138,8 +158,25 @@ const AboutSection = () => {
         <div className="absolute bottom-0 right-1/4 w-72 h-72 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-20 blur-3xl delay-200"></div>
       </div>
 
+      {/* Video Section */}
+<div className="relative mt-10 flex justify-center items-center">
+  <div
+    className={`transition-all duration-300 ease-in-out mx-auto`}
+  >
+    <video
+      ref={videoRef}
+      src="/your-video.mp4" // Replace with your video path
+      controls
+      autoPlay={isVideoPlaying}
+      className="w-[500px] h-[500px] rounded-xl cursor-pointer"
+      onClick={handleVideoClick}
+    />
+  </div>
+</div>
+
+
       {/* Event Sections */}
-      <div className="relative mt-20">
+      <div className="relative mt-10 my-20">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Event 1 */}
           <Link href="/Aihackathon" passHref>
