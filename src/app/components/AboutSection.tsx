@@ -137,7 +137,7 @@ const AboutSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-6 py-20 text-center">
+      <div className="relative container mx-auto px-6 py-10 text-center">
         <h1
           className={`text-6xl font-extrabold tracking-tight leading-tight md:text-8xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all duration-1000 ${fadeInClass}`}
         >
@@ -159,13 +159,13 @@ const AboutSection = () => {
       </div>
 
       {/* Video Section */}
-<div className="relative mt-10 flex justify-center items-center">
+<div className="relative mt-5 flex justify-center items-center">
   <div
     className={`transition-all duration-300 ease-in-out mx-auto`}
   >
     <video
       ref={videoRef}
-      src="/your-video.mp4" // Replace with your video path
+      src="/BTU TRAILER.mov" // Replace with your video path
       controls
       autoPlay={isVideoPlaying}
       className="w-[500px] h-[500px] rounded-xl cursor-pointer"
