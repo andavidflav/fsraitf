@@ -87,7 +87,7 @@
 // export default AboutSection;
 
 "use client";
-
+import Link from 'next/link';
 import { useState, useEffect, useRef } from "react";
 
 const AboutSection = () => {
@@ -166,9 +166,11 @@ const AboutSection = () => {
       </div>
 
       {/* Event Sections */}
+      
       <div className="relative mt-10 my-20">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Event 1 */}
+          <Link href="/Aihackathon" passHref>
           <div className="relative p-6 bg-gradient-to-r from-purple-900 to-blue-900 rounded-2xl shadow-lg overflow-hidden">
             <h2 className="text-3xl font-bold text-white">AI Hackathon</h2>
             <p className="mt-4 text-gray-400">
@@ -176,8 +178,9 @@ const AboutSection = () => {
               solutions handpicked by industry experts.
             </p>
           </div>
-
+          </Link>
           {/* Event 2 */}
+          <Link href="/Techtalk" passHref>
           <div className="relative p-6 bg-gradient-to-r from-purple-900 to-blue-900 rounded-2xl shadow-lg overflow-hidden">
             <h2 className="text-3xl font-bold text-white">Tech Talk</h2>
             <p className="mt-4 text-gray-400">
@@ -185,8 +188,10 @@ const AboutSection = () => {
               cutting-edge topics.
             </p>
           </div>
+          </Link>
 
           {/* Event 3 */}
+          <Link href="/Gaming" passHref>
           <div className="relative p-6 bg-gradient-to-l from-purple-900 to-blue-900 rounded-2xl shadow-lg overflow-hidden">
             <h2 className="text-3xl font-bold text-white">Gaming Tournament</h2>
             <p className="mt-4 text-gray-400">
@@ -194,6 +199,7 @@ const AboutSection = () => {
               glory.
             </p>
           </div>
+          </Link>
         </div>
       </div>
     </section>
