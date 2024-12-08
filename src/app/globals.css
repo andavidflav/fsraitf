@@ -62,3 +62,12 @@ body {
 .animate-scroll {
     animation: scroll 20s linear infinite; /* Reduced from 15s to 10s */
 }
+
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.trans {
+    transition: all 0.3s ease;
+}
