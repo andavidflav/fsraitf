@@ -15,57 +15,57 @@ type Team = {
 };
 
 const teams: Team[] = [
-  {
-    title: "Media Team",
-    members: [
-      { name: "Alice Johnson", image: "/media/alice.jpg", role: "Photographer", designation: "Media Coordinator" },
-      { name: "Bob Smith", image: "/media/bob.jpg", role: "Videographer", designation: "Media Lead" },
-      { name: "Cathy Brown", image: "/media/cathy.jpg", role: "Content Writer", designation: "Media Assistant" },
-      { name: "David Lee", image: "/media/david.jpg", role: "Graphic Designer", designation: "Creative Head" },
-      { name: "Emma Wilson", image: "/media/emma.jpg", role: "Social Media Manager", designation: "Outreach" },
-    ],
-  },
-  {
-    title: "Hackathon Team",
-    members: [
-      { name: "John Doe", image: "/hackathon/john.jpg", role: "Mentor", designation: "Tech Lead" },
-      { name: "Jane Smith", image: "/hackathon/jane.jpg", role: "Participant", designation: "Developer" },
-      { name: "Sam Green", image: "/hackathon/sam.jpg", role: "Organizer", designation: "Hackathon Coordinator" },
-      { name: "Lucy Gray", image: "/hackathon/lucy.jpg", role: "Volunteer", designation: "Support Staff" },
-      { name: "Tom White", image: "/hackathon/tom.jpg", role: "Judge", designation: "Tech Expert" },
-    ],
-  },
-  {
-    title: "Tech Talk Team",
-    members: [
-      { name: "Chris Black", image: "/techtalk/chris.jpg", role: "Speaker", designation: "Industry Expert" },
-      { name: "Sophia Blue", image: "/techtalk/sophia.jpg", role: "Panelist", designation: "Researcher" },
-      { name: "Liam Brown", image: "/techtalk/liam.jpg", role: "Host", designation: "Event Moderator" },
-      { name: "Emily Green", image: "/techtalk/emily.jpg", role: "Coordinator", designation: "Event Manager" },
-      { name: "Mia Red", image: "/techtalk/mia.jpg", role: "Assistant", designation: "Support Staff" },
-    ],
-  },
-  {
-    title: "Gaming Team",
-    members: [
-      { name: "Alex Gold", image: "/gaming/alex.jpg", role: "Game Developer", designation: "Game Coordinator" },
-      { name: "Jamie Silver", image: "/gaming/jamie.jpg", role: "Streamer", designation: "Media Outreach" },
-      { name: "Jordan Black", image: "/gaming/jordan.jpg", role: "Tester", designation: "QA Specialist" },
-      { name: "Taylor White", image: "/gaming/taylor.jpg", role: "Support", designation: "Tech Support" },
-      { name: "Morgan Green", image: "/gaming/morgan.jpg", role: "Organizer", designation: "Event Planner" },
-    ],
-  },
-  {
-    title: "Floating Admin Team",
-    members: [
-      { name: "Olivia Yellow", image: "/admin/olivia.jpg", role: "Manager", designation: "Admin Lead" },
-      { name: "Ethan Brown", image: "/admin/ethan.jpg", role: "Assistant", designation: "Support Staff" },
-      { name: "Isabella Blue", image: "/admin/isabella.jpg", role: "Coordinator", designation: "Logistics" },
-      { name: "Aiden Gray", image: "/admin/aiden.jpg", role: "Volunteer", designation: "Event Support" },
-      { name: "Charlotte Green", image: "/admin/charlotte.jpg", role: "Planner", designation: "Operations Head" },
-    ],
-  },
-];
+    {
+      title: "Media Team",
+      members: [
+        { name: "Alice Johnson", image: "/team2.jpg", role: "Photographer", designation: "Media Coordinator" }, // Female
+        { name: "Bob Smith", image: "/team1.jpg", role: "Videographer", designation: "Media Lead" }, // Male
+        { name: "Cathy Brown", image: "/team2.jpg", role: "Content Writer", designation: "Media Assistant" }, // Female
+        { name: "David Lee", image: "/team1.jpg", role: "Graphic Designer", designation: "Creative Head" }, // Male
+        { name: "Emma Wilson", image: "/team2.jpg", role: "Social Media Manager", designation: "Outreach" }, // Female
+      ],
+    },
+    {
+      title: "Hackathon Team",
+      members: [
+        { name: "John Doe", image: "/team1.jpg", role: "Mentor", designation: "Tech Lead" }, // Male
+        { name: "Jane Smith", image: "/team2.jpg", role: "Participant", designation: "Developer" }, // Female
+        { name: "Sam Green", image: "/team1.jpg", role: "Organizer", designation: "Hackathon Coordinator" }, // Male
+        { name: "Lucy Gray", image: "/team2.jpg", role: "Volunteer", designation: "Support Staff" }, // Female
+        { name: "Tom White", image: "/team1.jpg", role: "Judge", designation: "Tech Expert" }, // Male
+      ],
+    },
+    {
+      title: "Tech Talk Team",
+      members: [
+        { name: "Chris Black", image: "/team1.jpg", role: "Speaker", designation: "Industry Expert" }, // Male
+        { name: "Sophia Blue", image: "/team2.jpg", role: "Panelist", designation: "Researcher" }, // Female
+        { name: "Liam Brown", image: "/team1.jpg", role: "Host", designation: "Event Moderator" }, // Male
+        { name: "Emily Green", image: "/team2.jpg", role: "Coordinator", designation: "Event Manager" }, // Female
+        { name: "Mia Red", image: "/team2.jpg", role: "Assistant", designation: "Support Staff" }, // Female
+      ],
+    },
+    {
+      title: "Gaming Team",
+      members: [
+        { name: "Alex Gold", image: "/team1.jpg", role: "Game Developer", designation: "Game Coordinator" }, // Male
+        { name: "Jamie Silver", image: "/team2.jpg", role: "Streamer", designation: "Media Outreach" }, // Female
+        { name: "Jordan Black", image: "/team1.jpg", role: "Tester", designation: "QA Specialist" }, // Male
+        { name: "Taylor White", image: "/team2.jpg", role: "Support", designation: "Tech Support" }, // Female
+        { name: "Morgan Green", image: "/team1.jpg", role: "Organizer", designation: "Event Planner" }, // Male
+      ],
+    },
+    {
+      title: "Floating Admin Team",
+      members: [
+        { name: "Olivia Yellow", image: "/team2.jpg", role: "Manager", designation: "Admin Lead" }, // Female
+        { name: "Ethan Brown", image: "/team1.jpg", role: "Assistant", designation: "Support Staff" }, // Male
+        { name: "Isabella Blue", image: "/team2.jpg", role: "Coordinator", designation: "Logistics" }, // Female
+        { name: "Aiden Gray", image: "/team1.jpg", role: "Volunteer", designation: "Event Support" }, // Male
+        { name: "Charlotte Green", image: "/team2.jpg", role: "Planner", designation: "Operations Head" }, // Female
+      ],
+    },
+  ];
 
 const TeamPage: React.FC = () => {
     return (
@@ -135,7 +135,7 @@ const TeamPage: React.FC = () => {
                       transition: "transform 0.3s ease, box-shadow 0.3s ease",
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = "scale(1.05)";
+                      e.currentTarget.style.transform = "scale(1.20)";
                       e.currentTarget.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.7)";
                     }}
                     onMouseLeave={(e) => {
@@ -147,12 +147,14 @@ const TeamPage: React.FC = () => {
                       src={member.image}
                       alt={member.name}
                       style={{
-                        width: "40px", // Updated width
-                        height: "40px", // Updated height
+                        width: "100px", // Updated width
+                        height: "100px", // Updated height
                         borderRadius: "50%",
                         marginBottom: "10px",
                         objectFit: "cover",
                         border: "2px solid white",
+                        display: "block", // Ensures block-level element
+                        margin: "0 auto", // Centers the image horizontally
                       }}
                     />
                     <h3 style={{ margin: "10px 0 5px 0", fontSize: "1rem", fontWeight: "bold" }}>{member.name}</h3>
