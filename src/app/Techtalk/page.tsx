@@ -19,14 +19,25 @@ const speakers = [
     {
         id: 1,
         name: "Abdullah Zeyn Hassan",
-        title: "Startup Culture in Cottbus, Germany",
-        description: `Abdullah Zeyn Hassan is a passionate advocate for entrepreneurship and innovation. 
-                      Having played a pivotal role in nurturing startups in Cottbus, he focuses on fostering an ecosystem 
-                      where young entrepreneurs can thrive, turning ideas into impactful ventures.`,
+        title: "Dare to Begin: Your Startup Journey Has No Limits",
+        description: `Get ready to be inspired and empowered! In this motivational tech talk, I'll share my
+transformation from an Egyptian museum guide to the founder of an award-winning AI startup in
+Germany. Drawing from my experiences with multiple accelerator programs and winning the Star Parade
+2024, I'll show you why your background doesn't define your future. You'll learn:
+- How to navigate the German startup ecosystem and access funding opportunities
+- Key resources available for international founders in Germany
+- Practical steps to turn your innovative idea into a viable business
+- Ways to leverage accelerators, incubators, and support programs
+- Building a strong network in a new entrepreneurial environment
+- Common pitfalls to avoid and how to overcome typical challenges
+Whether you're a student with a bold idea or an aspiring entrepreneur wondering where to start, this talk
+will give you the motivation and practical roadmap to begin your startup journey in Germany.`,
         image: "/cl1mainspe.jpg", // Replace with your actual speaker image path
         companyLogo: "/cl3.png", // Replace with your actual company logo image path
-        companyInfo: `Museful revolutionizes museums with cutting-edge AI, integrating deep tech and knowledge graphs to digitalize archives and deliver personalized experiences. We enhance accessibility, bridging cultural heritage with modern audiences through sustainable, user-friendly design. Museful doesn't just preserve history – we bring it to life for everyone.`,
-        tags: "#Entrepreneurship #StartupCulture #Innovation #Cottbus #Germany #Museful",
+        companyInfo: `Museful is an innovative startup revolutionizing museum experiences through AI
+and augmented reality technology. We're creating digital solutions that enhance educational experiences
+in museums and cultural institutions, making culture more accessible and engaging for visitors.`,
+        
       },
       
     {
@@ -41,7 +52,7 @@ const speakers = [
                     at the Cottbus Start-up Centre Startblock B2
                     >>>>>>> state-of-the-art technology on over 600m²
                     WORKSHOPS & TRAININGS 3D Print, Lasercutting, Soldering, CNC exp. LECTURES for students, founding teams and researchers EVENTS TeamEvents for companies, idea competitions, open.COLab.day. PROTOTYPING`,
-      tags: "#AI #Innovation #Ethics #Technology",
+      
     },
     {
         "id": 3,
@@ -52,7 +63,7 @@ const speakers = [
       companyLogo: "/cl6.png",
       companyInfo: `The DLR Institute of Structures and Design introduces itself. In addition to an introduction to our research work, the following pages provide insights into our five research departments as well as more detailed information on contact persons and the Institute's two sites.`,
       
-        "tags": "#AI #Transport #Research #Innovation"
+       
       },
       {
         "id": 4,
@@ -70,7 +81,7 @@ Our goal? To help clients to adapt faster and to stay on top of this technologic
 We offer a broad range of AI and ML solutions and services, including NLP, Generative AI, Large Language Models, Computer Vision, MLOps and much more. From software development to data sourcing, edge deployment and security best practices, our goal is to provide your business with complete end-to-end AI solutions. 
 
 ML6 works with European governments, enterprises and startups in various industries - and is trusted by organizations like Randstad, P&G, ASML, Funke, Pfizer, Creative Fabrica and the Flemish Government.`,
-        "tags": "#AI #FoundationModels #NLP #GenerativeAI"
+        
       },
       {
         "id": 5,
@@ -84,7 +95,7 @@ ML6 works with European governments, enterprises and startups in various industr
 researcher at BTU Cottbus. His research interests include reliability and fault tolerance design, approximate
 computing, neural networks (NNs), hardware accelerators, and applications of field-programmable gate arrays
 (FPGAs).`,
-        "tags": "#AI #FoundationModels #NLP #GenerativeAI"
+        
       },
       
   ];
