@@ -205,9 +205,7 @@ const Tecktalks: FC = () => {
                     <p className="text-lg mt-4 font-semibold">{currentSpeaker.title}</p>
                     <p className="mt-4">{currentSpeaker.description}</p>
                     {/* Tags */}
-                    <div className="mt-6 text-sm text-gray-300">
-                        {currentSpeaker.tags}
-                    </div>
+                
                     </div>
                 </div>
 
