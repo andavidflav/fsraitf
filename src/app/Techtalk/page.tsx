@@ -71,7 +71,21 @@ We offer a broad range of AI and ML solutions and services, including NLP, Gener
 
 ML6 works with European governments, enterprises and startups in various industries - and is trusted by organizations like Randstad, P&G, ASML, Funke, Pfizer, Creative Fabrica and the Flemish Government.`,
         "tags": "#AI #FoundationModels #NLP #GenerativeAI"
-      }
+      },
+      {
+        "id": 5,
+        "name": "Mahdi Taheri",
+        "title": "Reliability in Edge-AI Chips",
+        "description": "Very recently, Artificial Intelligence started undergoing a remarkable transformation by moving closer to the source of data, thus establishing the Edge AI concept. This trend sets new reliability requirements for the related hardware chips used for safety- and mission-critical applications. The key research and engineering challenges stem from the limited computing and energy resources of the edge devices. Furthermore, the compute efficiency and the cost of the reliability of the Edge-AI chips are becoming enabling factors for their way to the market. The talk discusses techniques for soft error and lifetime reliability assessment and enhancement for Deep Learning accelerators. It advocates the role of approximate computing and looks into specifics of the systolic-array-, data-flow-based, and industry-grade accelerator architectures for ASICs and FPGAs.",
+      image: "/cl8.jpg",
+      companyLogo: "/cl5.jpg",
+      companyInfo: `Mahdi received his B.Sc. degree in electrical engineering in 2017 and his M.SC. degree in electrical engineering in
+2021. He finished his Ph.D. at Tallinn University of Technology in 2024, and since then, he has been a postdoctoral
+researcher at BTU Cottbus. His research interests include reliability and fault tolerance design, approximate
+computing, neural networks (NNs), hardware accelerators, and applications of field-programmable gate arrays
+(FPGAs).`,
+        "tags": "#AI #FoundationModels #NLP #GenerativeAI"
+      },
       
   ];
 
