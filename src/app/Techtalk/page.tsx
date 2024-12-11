@@ -37,15 +37,52 @@ const speakers = [
       
     {
       id: 2,
-      name: "Jane Doe",
-      title: "Tech Innovator",
-      description: `Jane Doe has spearheaded groundbreaking advancements in AI, focusing on improving accessibility for marginalized communities.`,
-      additionalInfo: `Join Jane as she discusses the ethical implications of AI in modern society and how we can shape technology to benefit everyone.`,
+      name: "Mahdi Taheri",
+      title: "Reliability in Edge-AI Chips",
+      description: `Very recently, Artificial Intelligence started undergoing a remarkable transformation by moving closer to the source of
+                    data, thus establishing the Edge AI concept. This trend sets new reliability requirements for the related hardware chips
+                    used for safety- and mission-critical applications. The key research and engineering challenges stem from the limited
+                    computing and energy resources of the edge devices. Furthermore, the compute efficiency and the cost of the
+                    reliability of the Edge-AI chips are becoming enabling factors for their way to the market. The talk discusses
+                    techniques for soft error and lifetime reliability assessment and enhancement for Deep Learning accelerators. It
+                    advocates the role of approximate computing and looks into specifics of the systolic-array-, data-flow-based, and
+                    industry-grade accelerator architectures for ASICs and FPGAs. `,
+        additionalInfo: `The evolution of technology has seen a shift towards Edge AI, where computing moves closer to the data source. This
+    transformation demands highly reliable hardware for critical applications. Addressing challenges like limited energy
+    and computing resources, researchers explore techniques to enhance reliability in Deep Learning accelerators.
+    Innovations such as approximate computing and advanced architectures for ASICs and FPGAs play a pivotal role in
+    improving efficiency and enabling the commercialization of Edge AI solutions.`,
       image: "/l2.png",
       companyLogo: "/cl5.jpg",
-      companyInfo: `An AI research lab dedicated to ethical and inclusive AI development for diverse global communities.`,
+      companyInfo: `Mahdi received his B.Sc. degree in electrical engineering in 2017 and his M.SC. degree in electrical engineering in
+2021. He finished his Ph.D. at Tallinn University of Technology in 2024, and since then, he has been a postdoctoral
+researcher at BTU Cottbus. His research interests include reliability and fault tolerance design, approximate
+computing, neural networks (NNs), hardware accelerators, and applications of field-programmable gate arrays
+(FPGAs).`,
       tags: "#AI #Innovation #Ethics #Technology",
     },
+    {
+        "id": 3,
+        "name": "Anton Galich",
+        "title": "Artificial Intelligence in Transport Research",
+        "description": "Anton Galich’s presentation will focus on artificial intelligence in transport research. For this purpose, he will briefly discuss the rapid rise of AI and its potential use cases in the transport area as a short introduction before the main part of his talk in which he will outline how AI can help filling some gaps in transport research. More specifically, he will illustrate existing problems in the collection of data needed in transport research and highlight how AI can help overcoming these issues on the basis of two use cases that he is currently working on. The two use cases center on objection detection and image generation models.",
+      image: "/cl3mainspe.jpg",
+      companyLogo: "/cl5.jpg",
+      companyInfo: `Mahdi received his B.Sc. degree in electrical engineering in 2017 and his M.SC. degree in electrical engineering in 2021. He finished his Ph.D. at Tallinn University of Technology in 2024, and since then, he has been a postdoctoral researcher at BTU Cottbus. His research interests include reliability and fault tolerance design, approximate computing, neural networks (NNs), hardware accelerators, and applications of field-programmable gate arrays (FPGAs).`,
+      
+        "tags": "#AI #Transport #Research #Innovation"
+      },
+      {
+        "id": 4,
+        "name": "Matthias Richter",
+        "title": "Foundation Models and the AI Landscape",
+        "description": "With a background in software engineering, Matthias Richter has successfully transitioned into AI development over the past several years. His expertise lies in retrieval problems, NLP, and Generative AI. Matthias is part of ML6, an AI consultancy that empowers businesses to transform their models through cutting-edge AI technology. In this tech talk, Matthias will explore how foundation models are shifting the AI landscape. He'll delve into diverse use cases, examining traditional implementation methods and how they're evolving with the adoption of large language models.",
+      image: "/cl4mainspe.jpg",
+      companyLogo: "/cl5.jpg",
+      companyInfo: `Mahdi received his B.Sc. degree in electrical engineering in 2017 and his M.SC. degree in electrical engineering in 2021. He finished his Ph.D. at Tallinn University of Technology in 2024, and since then, he has been a postdoctoral researcher at BTU Cottbus. His research interests include reliability and fault tolerance design, approximate computing, neural networks (NNs), hardware accelerators, and applications of field-programmable gate arrays (FPGAs).`,
+        "tags": "#AI #FoundationModels #NLP #GenerativeAI"
+      }
+      
   ];
 
 const Tecktalks: FC = () => {
