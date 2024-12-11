@@ -23,42 +23,24 @@ const speakers = [
         description: `Abdullah Zeyn Hassan is a passionate advocate for entrepreneurship and innovation. 
                       Having played a pivotal role in nurturing startups in Cottbus, he focuses on fostering an ecosystem 
                       where young entrepreneurs can thrive, turning ideas into impactful ventures.`,
-        additionalInfo: `In his talk, Abdullah highlights the unique opportunities Cottbus offers to startups, 
-                         including its supportive community, access to resources, and strong ties to Germany's 
-                         broader tech and industrial network. Discover how the city is shaping the future of 
-                         entrepreneurship in Europe.`,
         image: "/cl1mainspe.jpg", // Replace with your actual speaker image path
-        companyLogo: "/cl1main.jpg", // Replace with your actual company logo image path
-        companyInfo: `The company, Museful, focuses on providing creative and collaborative tools to help startups 
-                      streamline their workflows and transform ideas into tangible results. Based in Cottbus, Museful 
-                      plays a significant role in the city's growing entrepreneurial scene.`,
+        companyLogo: "/cl3.png", // Replace with your actual company logo image path
+        companyInfo: `Museful revolutionizes museums with cutting-edge AI, integrating deep tech and knowledge graphs to digitalize archives and deliver personalized experiences. We enhance accessibility, bridging cultural heritage with modern audiences through sustainable, user-friendly design. Museful doesn't just preserve history – we bring it to life for everyone.`,
         tags: "#Entrepreneurship #StartupCulture #Innovation #Cottbus #Germany #Museful",
       },
       
     {
       id: 2,
-      name: "Mahdi Taheri",
-      title: "Reliability in Edge-AI Chips",
-      description: `Very recently, Artificial Intelligence started undergoing a remarkable transformation by moving closer to the source of
-                    data, thus establishing the Edge AI concept. This trend sets new reliability requirements for the related hardware chips
-                    used for safety- and mission-critical applications. The key research and engineering challenges stem from the limited
-                    computing and energy resources of the edge devices. Furthermore, the compute efficiency and the cost of the
-                    reliability of the Edge-AI chips are becoming enabling factors for their way to the market. The talk discusses
-                    techniques for soft error and lifetime reliability assessment and enhancement for Deep Learning accelerators. It
-                    advocates the role of approximate computing and looks into specifics of the systolic-array-, data-flow-based, and
-                    industry-grade accelerator architectures for ASICs and FPGAs. `,
-        additionalInfo: `The evolution of technology has seen a shift towards Edge AI, where computing moves closer to the data source. This
-    transformation demands highly reliable hardware for critical applications. Addressing challenges like limited energy
-    and computing resources, researchers explore techniques to enhance reliability in Deep Learning accelerators.
-    Innovations such as approximate computing and advanced architectures for ASICs and FPGAs play a pivotal role in
-    improving efficiency and enabling the commercialization of Edge AI solutions.`,
-      image: "/l2.png",
-      companyLogo: "/cl5.jpg",
-      companyInfo: `Mahdi received his B.Sc. degree in electrical engineering in 2017 and his M.SC. degree in electrical engineering in
-2021. He finished his Ph.D. at Tallinn University of Technology in 2024, and since then, he has been a postdoctoral
-researcher at BTU Cottbus. His research interests include reliability and fault tolerance design, approximate
-computing, neural networks (NNs), hardware accelerators, and applications of field-programmable gate arrays
-(FPGAs).`,
+      name: "Serghei Baltag",
+      title: "3D Printing with colab: Turning Ideas into Reality",
+      description: `Discover the possibilities of 3D printing at colab! This session highlights our innovative projects, including prototypes, architectural models, design objects, and spare parts. Learn about the Fürst-Pückler-Star Project, where tradition meets technology, and explore the 3D printing process from design to final product. We’ll showcase how tools like FFF-3D-Prinnting bring creativity to life, using eco-friendly materials and cutting-edge technology.`,
+      image: "/cl2mainspe.jpg",
+      companyLogo: "/cl4.png",
+      companyInfo: `CreativeOpenLab (COLab) >>>>>>> structural
+                    change project of the BTU >>>>>>> new Makerspace on Campus >>>>>>> open for everyone >>>>>>>
+                    at the Cottbus Start-up Centre Startblock B2
+                    >>>>>>> state-of-the-art technology on over 600m²
+                    WORKSHOPS & TRAININGS 3D Print, Lasercutting, Soldering, CNC exp. LECTURES for students, founding teams and researchers EVENTS TeamEvents for companies, idea competitions, open.COLab.day. PROTOTYPING`,
       tags: "#AI #Innovation #Ethics #Technology",
     },
     {
@@ -67,8 +49,8 @@ computing, neural networks (NNs), hardware accelerators, and applications of fie
         "title": "Artificial Intelligence in Transport Research",
         "description": "Anton Galich’s presentation will focus on artificial intelligence in transport research. For this purpose, he will briefly discuss the rapid rise of AI and its potential use cases in the transport area as a short introduction before the main part of his talk in which he will outline how AI can help filling some gaps in transport research. More specifically, he will illustrate existing problems in the collection of data needed in transport research and highlight how AI can help overcoming these issues on the basis of two use cases that he is currently working on. The two use cases center on objection detection and image generation models.",
       image: "/cl3mainspe.jpg",
-      companyLogo: "/cl5.jpg",
-      companyInfo: `Mahdi received his B.Sc. degree in electrical engineering in 2017 and his M.SC. degree in electrical engineering in 2021. He finished his Ph.D. at Tallinn University of Technology in 2024, and since then, he has been a postdoctoral researcher at BTU Cottbus. His research interests include reliability and fault tolerance design, approximate computing, neural networks (NNs), hardware accelerators, and applications of field-programmable gate arrays (FPGAs).`,
+      companyLogo: "/cl6.png",
+      companyInfo: `The DLR Institute of Structures and Design introduces itself. In addition to an introduction to our research work, the following pages provide insights into our five research departments as well as more detailed information on contact persons and the Institute's two sites.`,
       
         "tags": "#AI #Transport #Research #Innovation"
       },
@@ -78,8 +60,16 @@ computing, neural networks (NNs), hardware accelerators, and applications of fie
         "title": "Foundation Models and the AI Landscape",
         "description": "With a background in software engineering, Matthias Richter has successfully transitioned into AI development over the past several years. His expertise lies in retrieval problems, NLP, and Generative AI. Matthias is part of ML6, an AI consultancy that empowers businesses to transform their models through cutting-edge AI technology. In this tech talk, Matthias will explore how foundation models are shifting the AI landscape. He'll delve into diverse use cases, examining traditional implementation methods and how they're evolving with the adoption of large language models.",
       image: "/cl4mainspe.jpg",
-      companyLogo: "/cl5.jpg",
-      companyInfo: `Mahdi received his B.Sc. degree in electrical engineering in 2017 and his M.SC. degree in electrical engineering in 2021. He finished his Ph.D. at Tallinn University of Technology in 2024, and since then, he has been a postdoctoral researcher at BTU Cottbus. His research interests include reliability and fault tolerance design, approximate computing, neural networks (NNs), hardware accelerators, and applications of field-programmable gate arrays (FPGAs).`,
+      companyLogo: "/cl7.jpg",
+      companyInfo: `ML6 is a leading AI & Machine Learning company with a team of 100+ AI and ML experts, based in Ghent, Amsterdam and Berlin. 
+
+As exciting developments are happening in the world of AI, unprecedented opportunities are being offered for businesses to innovate and gain a competitive edge. And now more than ever is the time to create intelligence with lasting positive impact. 
+
+Our goal? To help clients to adapt faster and to stay on top of this technological revolution. We help you to navigate, activate or build intelligence for all your business challenges, cross-industry and cloud agnostic. Together, we guide the AI revolution towards positive impact. 
+
+We offer a broad range of AI and ML solutions and services, including NLP, Generative AI, Large Language Models, Computer Vision, MLOps and much more. From software development to data sourcing, edge deployment and security best practices, our goal is to provide your business with complete end-to-end AI solutions. 
+
+ML6 works with European governments, enterprises and startups in various industries - and is trusted by organizations like Randstad, P&G, ASML, Funke, Pfizer, Creative Fabrica and the Flemish Government.`,
         "tags": "#AI #FoundationModels #NLP #GenerativeAI"
       }
       
@@ -189,7 +179,6 @@ const Tecktalks: FC = () => {
                     <h3 className="text-2xl font-bold">{currentSpeaker.name}</h3>
                     <p className="text-lg mt-4 font-semibold">{currentSpeaker.title}</p>
                     <p className="mt-4">{currentSpeaker.description}</p>
-                    <p className="mt-4">{currentSpeaker.additionalInfo}</p>
                     {/* Tags */}
                     <div className="mt-6 text-sm text-gray-300">
                         {currentSpeaker.tags}
